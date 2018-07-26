@@ -1,0 +1,664 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>KIM主页 - 主页从未如此惊艳</title>
+    <meta name="keywords" content="Google搜索,国外网站,国外网址,国外购物,国外视频,国外新闻,国外设计网站,国外网址导航,网站大全,网址导航,元搜索,多引擎搜索,效率工具,浏览器主页,聚合搜索">
+    <meta name="description" content="精雕细琢每一像素、只为让您拥有一个体面的浏览器主页。除此之外，再无其他。">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="{% static 'css/style-min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/ico" href="{% static 'img/favicon.ico' %}">
+    <!--[if lt IE 9]>
+        <script src="https://resource.hao1258.com/styles/hao1258/front/js/html5shiv.js"></script>
+    <![endif]-->
+    <script type="text/javascript">var serverURI = '',staticServerURI = '',staticServerAPIURI = '';</script>
+    <style type="text/css">
+        <!--
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+
+        ;
+        .animated.infinite {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite
+        }
+
+        ;
+        @-webkit-keyframes tada {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+            10%, 20% {
+                -webkit-transform: scale(0.9) rotate(-3deg);
+                transform: scale(0.9) rotate(-3deg)
+            }
+            30%, 50%, 70%, 90% {
+                -webkit-transform: scale(1.5) rotate(3deg);
+                transform: scale(1.5) rotate(3deg)
+            }
+            40%, 60%, 80% {
+                -webkit-transform: scale(1.5) rotate(-3deg);
+                transform: scale(1.5) rotate(-3deg)
+            }
+            100% {
+                -webkit-transform: scale(1) rotate(0);
+                transform: scale(1) rotate(0)
+            }
+        }
+
+        @keyframes tada {
+            0% {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1)
+            }
+            10%, 20% {
+                -webkit-transform: scale(0.9) rotate(-3deg);
+                -ms-transform: scale(0.9) rotate(-3deg);
+                transform: scale(0.9) rotate(-3deg)
+            }
+            30%, 50%, 70%, 90% {
+                -webkit-transform: scale(1.5) rotate(3deg);
+                -ms-transform: scale(1.5) rotate(3deg);
+                transform: scale(1.5) rotate(3deg)
+            }
+            40%, 60%, 80% {
+                -webkit-transform: scale(1.5) rotate(-3deg);
+                -ms-transform: scale(1.5) rotate(-3deg);
+                transform: scale(1.5) rotate(-3deg)
+            }
+            100% {
+                -webkit-transform: scale(1) rotate(0);
+                -ms-transform: scale(1) rotate(0);
+                transform: scale(1) rotate(0)
+            }
+        }
+
+        .tada {
+            -webkit-animation-name: tada;
+            animation-name: tada
+        }
+
+        @-webkit-keyframes wobble {
+            0% {
+                -webkit-transform: translateX(0%);
+                transform: translateX(0%)
+            }
+            15% {
+                -webkit-transform: translateX(-25%) rotate(-5deg);
+                transform: translateX(-25%) rotate(-5deg)
+            }
+            30% {
+                -webkit-transform: translateX(20%) rotate(3deg);
+                transform: translateX(20%) rotate(3deg)
+            }
+            45% {
+                -webkit-transform: translateX(-15%) rotate(-3deg);
+                transform: translateX(-15%) rotate(-3deg)
+            }
+            60% {
+                -webkit-transform: translateX(10%) rotate(2deg);
+                transform: translateX(10%) rotate(2deg)
+            }
+            75% {
+                -webkit-transform: translateX(-5%) rotate(-1deg);
+                transform: translateX(-5%) rotate(-1deg)
+            }
+            100% {
+                -webkit-transform: translateX(0%);
+                transform: translateX(0%)
+            }
+        }
+
+        ;
+        -->
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://f1.webshare.mob.com/code/mob-share.css">
+</head>
+<body class="body" style="background-image: url(&quot;{% static 'img/background.jpg' %}&quot;); overflow-y: scroll;">
+<div id="main" style="">
+    <h1 style="text-align:center;width:100%;margin-top:40px;display:none;" id="ie-low">
+        您的IE版本落后啦，建议升级到IE8以上版本。以便为您带来更好的体验！
+        <a rel="nofollow" style="color:#ffffff;text-decoration:underline;"
+           href="https://support.microsoft.com/zh-cn/products/internet-explorer" target="_blank">点击升级</a>
+    </h1>
+    <div id="header" class="header">
+<div id="menu-group" class="head-nav">
+	<span id="goup" class="head-nav-item head-nav-item-start" style="margin-left: 86px; width: 30px; height: 30px; top: -5px; display: none;">
+		<img class="head-nav-item-img" title="返回" style="width:32px;height:32px;" alt="返回" src="{% static 'img/goup_light.png' %}">
+	</span>
+	<span id="rand-bg" class="head-nav-item" style="visibility: hidden;">
+
+	</span>
+	<span id="user-center" class="head-nav-item head-nav-item-start" style="visibility: hidden;">
+
+	</span>
+	<span id="change-bg" class="head-nav-item" style="">
+		<img class="head-nav-item-img" title="设置背景" alt="换肤" src="{% static 'img/chbg_light.png' %}">
+	</span>
+
+
+</div>
+    </div>
+    <div class="container">
+
+        <div id="search-engine" class="search-engine">
+            <div id="engine-logo" class="search-logo">
+                <img style="display:none;" alt="搜索引擎Logo" src="{% static 'img/google.png' %}">
+                <img style="display:none;" alt="搜索引擎Logo" src="{% static 'img/baidu.png' %}">
+                <img style="width:100%;height:100%" alt="搜索引擎Logo" title="点击切换" src="{% static 'img/baidu.png' %}">
+            </div>
+            <div id="search-box" class="search-box">
+                <form id="search-from" class="search-from" action="/metaSearch" target="_blank"
+                      _lpchecked="1">
+        	<span id="search-input-box" class="search-input-box">
+        		<input id="search-input" tabindex="1" type="text" class="search-input" autocomplete="off">
+
+        	</span>
+                    <span id="search-button-box" class="search-button-box" title="搜索">
+        		<input type="submit" tabindex="2" id="search-button" class="search-button" value=" ">
+        	</span>
+                </form>
+                <div id="search-suggest" class="search-suggest" style="display: none"></div>
+            </div>
+        </div>
+        <div id="web-site" class="web-site" style="top: 0px;">
+            <div id="web-site-header" class="web-site-header">
+                <div class="web-site-header-body">
+                    <div id="site-class-group" class="site-class-group">
+                        <div id="site-class-group-left-btn" class="left-btn" style="visibility: collapse;">
+                            <span></span>
+                        </div>
+                        <div id="site-class-group-body" class="navi-btn-group site-class-group-body">
+
+                        </div>
+                        <div id="site-class-group-right-btn" class="right-btn" style="visibility: collapse;">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="right-tbar">
+                        <div class="right-tbar-item">
+					<span id="site_list_type" class="switch-btn">
+						<input class="checked-switch" type="checkbox">
+						<span class="text-switch text-switch-checked text-switch-after" data-yes="内网"
+                              data-no="外网">内网</span>
+						<span class="toggle-btn toggle-btn-checked"></span>
+					</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div id="web-site-body" class="web-site-body">
+		
+			<div class="web-group  web-group-couple ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-single ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-couple ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-single ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-couple ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-single ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-couple ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-single ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-couple ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+			<div class="web-group  web-group-end  web-group-single ">
+				<div class="web-group-head">
+					<span class="title-font"></span>
+				</div>
+				<div class="web-group-item web-group-item-head"></div>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+					<a class="web-group-item" target="_blank" href="" rel="nofollow">
+						<div class="web-group-icon"></div>
+						<span class="web-group-name"></span>
+					</a>
+				
+			</div>
+		
+	</div>
+	
+
+        </div>
+    </div>
+
+
+<div id="bg-setting" class="setting" style="display:none;">
+    <div class="setting-header">
+        <div id="bg-class-group" class="bg-class-group">
+        </div>
+    </div>
+    <div id="bg-content" class="setting-body" style="height: 80.2495%;">
+    	<div id="bg-group" class="bg-group">
+    	</div>
+    </div>
+</div>
+
+    <div id="foot" class="foot" style="visibility:collapse;"></div>
+    <script type="text/javascript">
+        var baidu_search_url = 'https://www.baidu.com/s',
+        baidu_search_hint_url = 'http://suggestion.baidu.com/su', haosou_search_url = 'https://www.so.com/s',
+        haosou_search_hint_url = 'https://sug.so.360.cn/suggest', bing_search_url = 'https://www.bing.com/search',
+        bing_search_hint_url = 'https://api.bing.com/qsonhs.aspx', google_search_url = 'https://www.google.com/search',
+        google_search_hint_url = 'https://www.google.com/complete/search',
+        sogou_search_url = 'https://www.sogou.com/web', sogou_search_hint_url = 'https://sug.so.360.cn/suggest';
+        var siteClasses = '{"outerClasses": [{% for category in outer_categorys %}{"id": {{category.id}},"className": "{{category.name}}","description": "{{category.name}}"}{% if not forloop.last %},{% endif %}{% endfor %}],"innerClasses": [{% for category in inner_categorys %}{"id": {{category.id}},"className": "{{category.name}}","description": "{{category.name}}"}{% if not forloop.last %},{% endif %}{% endfor %}]}',
+        __sys_t = '';
+    </script>
+    <!--[if !IE]> -->
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"    type="text/javascript"></script>
+    <!-- <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="{% static 'js/jquery-1.9.1.min.js' %}" type="text/javascript"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+     window.jQuery || document.write("<script src='{% static "js/jquery-3.1.1.min.js" %}' type='text/javascript'>"+"<"+"/script>");
+    </script>
+<![endif]-->
+    <script src="{% static 'js/jquery.cookie.min.js' %}"
+            type="text/javascript"></script>
+    <script src="{% static 'js/common-min.js' %}" type="text/javascript"></script>
+    <script type="text/javascript">
+        var __sys_index_lib = document.createElement('script');
+        __sys_index_lib.src = '{% static "js/index-min.js" %}?_rd=' + Math.random();
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(__sys_index_lib, s);
+    </script>
+    <div id="home-mask" style="display:none;"></div>
+</div>
+
+<div class="-mob-share-ui-bg" style="display: none;"></div>
+
+<script type="text/javascript">
+    function loadScript(url, target, callback) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = 'async';
+        script.id = "-mob-share";
+        script.src = url;
+        target.appendChild(script);
+        if (script.readyState) { //IE
+            script.onreadystatechange = function () {
+                if (script.readyState == 'complete' || script.readyState == 'loaded') {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            }
+        } else { //非IE
+            script.onload = function () {
+                callback();
+            }
+        }
+    }
+
+
+</script>
+
+
+<div style="position: fixed; left: 50%; top: 50%; width: 32px; height: 32px; margin: 0px auto; display: none; z-index: 99999;">
+    <img src="{% static 'img/loading.gif' %}" style="width: 32px; height: 32px;">
+</div>
+</body>
+</html>

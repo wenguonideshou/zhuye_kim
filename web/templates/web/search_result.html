@@ -1,0 +1,74 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>{{q}} - KIM主页 多引擎搜索</title>
+		<meta name="keywords" content="多引擎搜索,元搜索,metasearch,并发搜索,全搜,多搜" />
+		<meta name="description" content="多引擎搜索,元搜索,metasearch,并发搜索,全搜,多搜" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<link href="{% static 'css/meta-search-style-min.css' %}"	rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/ico" href="{% static 'img/favicon.ico' %}" />
+
+<!--[if lt IE 9]>
+<script src="https://resource.hao1258.com/styles/hao1258/front/js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript">var serverURI = '',staticServerURI = '',staticServerAPIURI = '';</script>
+	</head>
+	<body class="body">
+		<div id="meta-search-panel" class="meta-search-panel">
+			<div id="meta-search-header" class="meta-search-header">
+				<div id="meta-search-header-left" class="meta-search-header-left">
+					<a href="../" title="点击回到主页" id="meta-search-close" class="meta-search-close">
+						<span class="icon close-icon"></span>
+					</a>
+				</div>
+				<div id="meta-search-header-body" class="meta-search-header-body">
+					<div id="meta-search-box" class="meta-search-box">
+						<span id="meta-search-input-box" class="meta-search-input-box">
+							<input id="meta-search-input" tabIndex="1" type="text" value="" maxlength="140" class="meta-search-input" autocomplete="off" />
+						</span>
+						<span id="meta-search-button-box" class="meta-search-button-box" title="搜索">
+							<input type="button" tabIndex="2" id="meta-search-button" class="meta-search-button" value=" " />
+						</span>
+					</div>
+					<div id="meta-search-suggest" class="meta-search-suggest" style="display:none;"></div>
+				</div>
+				<div id="meta-search-header-right" class="meta-search-header-right">
+					<ul id="meta-search-menu" class="meta-search-menu">
+						<li id="meta-search-menu-baidu" class="meta-search-menu-item">
+							<span class="icon baidu-icon" style="background-image: url(&quot;{% static 'img/baidu.png' %}&quot;);"></span>
+						</li>
+						<li id="meta-search-menu-bing" class="meta-search-menu-item">
+							<span class="icon bing-icon" style="background-image: url(&quot;{% static 'img/bing.png' %}&quot;);"></span>
+						</li>
+						<li id="meta-search-menu-sogou" class="meta-search-menu-item">
+							<span class="icon sogou-icon" style="background-image: url(&quot;{% static 'img/sogou.png' %}&quot;);"></span>
+						</li>
+						<li id="meta-search-menu-haoso" class="meta-search-menu-item">
+							<span class="icon haoso-icon" style="background-image: url(&quot;{% static 'img/360.png' %}&quot;);"></span>
+						</li>
+
+					</ul>
+                    <span id="meta-search-menu-cursor" class="meta-search-menu-cursor" style="left: 72px; background-image: url(&quot;{% static 'img/baidu_cursor.png' %}&quot;);"></span>
+				</div>
+			</div>
+			<div id="meta-search-body" class="meta-search-body"></div>
+		</div>
+		<!--[if !IE]> -->
+		<script src="{% static 'js/jquery-3.1.1.min.js' %}"    type="text/javascript"></script>
+		<!-- <![endif]-->
+		<!--[if lt IE 9]>
+		<script src="{% static 'js/jquery-1.9.1.min.js' %}" type="text/javascript"></script>
+		<![endif]-->
+		<!--[if IE]>
+		<script type="text/javascript">
+        window.jQuery || document.write("<script src='{% static "js/jquery-3.1.1.min.js" %}' type='text/javascript'>"+"<"+"/script>");
+        </script>
+		<![endif]-->
+
+		<script type="text/javascript">var baidu_search_url='https://www.baidu.com/s',haosou_search_url='https://www.so.com/s',bing_search_url='https://www.bing.com/search',google_search_url='https://www.google.com/search',sogou_search_url='https://www.sogou.com/web',q={{q}},t='baidu',meta_search_min = '{% static 'js/meta-search-min.js' %}';document.getElementById('meta-search-input').value=decodeURIComponent(q);document.write("<script src='"+meta_search_min+"?_rd="+Math.random()+"'><\/script>");</script>
+
+	</body>
+</html>
