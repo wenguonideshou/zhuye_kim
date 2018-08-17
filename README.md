@@ -1,8 +1,6 @@
 # zhuye_kim
 仿zhuye.kim的简单导航程序
 
-演示地址：http://118.25.14.156:8080
-
 ![zhuye.kim(1).png](https://www.moerats.com/usr/picture/zhuye.kim(1).png)
 
 ![zhuye.kim(2).png](https://www.moerats.com/usr/picture/zhuye.kim(2).png)
