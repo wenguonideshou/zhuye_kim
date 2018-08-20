@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Site, Category, SmallCategory, BackGround, BackGroundCategory
 
 admin.site.site_header = '管理系统'
-
+admin.site.site_title = '管理系统'
 
 class SiteAdmin(admin.ModelAdmin):
     list_display = ['name', 'desc', 'smallcategory', 'category', 'image_url', 'true_url', 'created_time']
