@@ -26,6 +26,7 @@ pip3 install django pymysql pillow
 ```bash
 git clone https://github.com/wenguonideshou/zhuye_kim
 cd zhuye_kim
+python3 manage.py makemigrations --merge
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
