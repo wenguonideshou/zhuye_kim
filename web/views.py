@@ -24,7 +24,10 @@ def sitelist(request):
         c = {"id": small_category.get('id'), "className": small_category.get('name'), "description": small_category.get('name'), "siteVos": []}
         for site in sites:
             if site.get('id') and small_category.get('id'):
-                a = {"id": site.get('id'), "siteName": site.get('name'), "siteUrl": site.get('true_url'), "logoResourceId": site.get('image_url')}
+                desc = site.get('desc')
+                if not len(desc) > 0:
+                    desc = site.get('name')
+                a = {"id": site.get('id'), "siteName": site.get('name'), "siteUrl": site.get('true_url'), "siteDesc": desc, "logoResourceId": site.get('image_url')}
                 c["siteVos"].append(a)
         sites_result['dataResult'].append(c)
     response = JsonResponse(sites_result, safe=False)
