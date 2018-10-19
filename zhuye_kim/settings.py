@@ -1,5 +1,6 @@
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -62,8 +63,6 @@ WSGI_APPLICATION = 'zhuye_kim.wsgi.application'
 
 # Database
 
-import pymysql
-pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -109,3 +108,13 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+try:
+    from local_settings import *
+except SyntaxError as e:
+    print("ERROR:", e)
+    sys.exit(0)
+
+if DATABASES['default']['ENGINE'] == 'django.db.backends.mysql':
+    import pymysql
+    pymysql.install_as_MySQLdb()
