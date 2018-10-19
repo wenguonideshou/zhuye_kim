@@ -23,11 +23,11 @@ class SiteInline(admin.TabularInline):
 
 
 class SmallCategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'category', 'guonei', 'created_time']
+    list_display = ['name', 'category', 'order', 'guonei', 'created_time']
     list_filter = ('category',)
     search_fields = ('name',)
     date_hierarchy = 'created_time'
-    ordering = ['id']
+    ordering = ['order', 'id']
     inlines = [SiteInline]
 
     # 显示是否国内
@@ -42,10 +42,10 @@ class SmallCategoryInline(admin.TabularInline):
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'guonei', 'created_time']
+    list_display = ['name', 'order', 'guonei', 'created_time']
     search_fields = ('name',)
     date_hierarchy = 'created_time'
-    ordering = ['id']
+    ordering = ['order', 'id']
     inlines = [SmallCategoryInline]
 
 
