@@ -18,6 +18,10 @@ class Migration(migrations.Migration):
             name='smallcategory',
             options={'ordering': ['order', 'id'], 'verbose_name': '小分类', 'verbose_name_plural': '小分类'},
         ),
+        migrations.AlterModelOptions(
+            name='site',
+            options={'ordering': ['order', 'id'], 'verbose_name': '站点', 'verbose_name_plural': '站点'},
+        ),
         migrations.AddField(
             model_name='category',
             name='order',
@@ -27,5 +31,10 @@ class Migration(migrations.Migration):
             model_name='smallcategory',
             name='order',
             field=models.IntegerField(default=1, help_text='分类显示顺序', verbose_name='顺序'),
+        ),
+        migrations.AddField(
+            model_name='site',
+            name='order',
+            field=models.IntegerField(default=1, help_text='站点显示顺序', verbose_name='顺序'),
         ),
     ]

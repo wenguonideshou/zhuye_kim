@@ -41,6 +41,7 @@ class Site(models.Model):
     # ImageField类型必须设置upload_to参数
     image_url = models.ImageField('图片', upload_to='images/Site/%Y/%m/%d')
     true_url = models.URLField(verbose_name='地址', max_length=100, blank=True)
+    order = models.IntegerField(verbose_name='顺序', default=1, help_text='站点显示顺序')
     created_time = models.DateTimeField(verbose_name='创建时间', auto_now_add=True)
 
     def __str__(self):
@@ -49,7 +50,7 @@ class Site(models.Model):
     class Meta:
         verbose_name = '站点'
         verbose_name_plural = verbose_name
-        ordering = ['id']
+        ordering = ['order', 'id']
 
 
 class BackGroundCategory(models.Model):

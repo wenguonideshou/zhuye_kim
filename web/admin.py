@@ -5,10 +5,10 @@ admin.site.site_header = '管理系统'
 admin.site.site_title = '管理系统'
 
 class SiteAdmin(admin.ModelAdmin):
-    list_display = ['name', 'desc', 'smallcategory', 'category', 'image_url', 'true_url', 'created_time']
+    list_display = ['name', 'desc', 'order', 'smallcategory', 'category', 'image_url', 'true_url', 'created_time']
     search_fields = ('name',)
     date_hierarchy = 'created_time'
-    ordering = ['id']
+    ordering = ['order', 'id']
 
     # 显示是否国内
     def category(self, obj):
