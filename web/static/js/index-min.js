@@ -257,7 +257,7 @@ searchEngineLogoPath = staticServerURI + "../static/img/"; (function(f, h) {
             }
         },
         get_baidu_search_hint_list: function(d, b) {
-            var sugurl = "http://suggestion.baidu.com/su?wd=" + b;
+            var sugurl = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + b;
 
                 //定义回调函数
                 window.baidu = {
