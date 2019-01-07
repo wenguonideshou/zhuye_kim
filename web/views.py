@@ -3,10 +3,14 @@ from django.http import HttpResponse
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST, require_GET
 from django.views.decorators.csrf import csrf_exempt
+from django.conf import settings
 from .models import Site, Category, SmallCategory, BackGround, BackGroundCategory
 
 
 def index(request):
+    SITE_NAME = settings.SITE_NAME
+    SITE_DESC = settings.SITE_NAME
+    SITE_KEYWORD = settings.SITE_NAME
     outer_categorys = Category.objects.filter(guonei=0).all()
     inner_categorys = Category.objects.filter(guonei=1).all()
     return render(request, 'web/index.html', locals())
