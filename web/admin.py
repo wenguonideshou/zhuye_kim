@@ -5,10 +5,10 @@ admin.site.site_header = '管理系统'
 admin.site.site_title = '管理系统'
 
 class SiteAdmin(admin.ModelAdmin):
-    list_display = ['name', 'desc', 'smallcategory', 'category', 'image_url', 'true_url', 'created_time']
+    list_display = ['name', 'desc', 'order', 'smallcategory', 'category', 'image_url', 'true_url', 'created_time']
     search_fields = ('name',)
     date_hierarchy = 'created_time'
-    ordering = ['id']
+    ordering = ['order', 'id']
 
     # 显示是否国内
     def category(self, obj):
@@ -23,11 +23,11 @@ class SiteInline(admin.TabularInline):
 
 
 class SmallCategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'category', 'guonei', 'created_time']
+    list_display = ['name', 'category', 'order', 'guonei', 'created_time']
     list_filter = ('category',)
     search_fields = ('name',)
     date_hierarchy = 'created_time'
-    ordering = ['id']
+    ordering = ['order', 'id']
     inlines = [SiteInline]
 
     # 显示是否国内
@@ -42,10 +42,10 @@ class SmallCategoryInline(admin.TabularInline):
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'guonei', 'created_time']
+    list_display = ['name', 'order', 'guonei', 'created_time']
     search_fields = ('name',)
     date_hierarchy = 'created_time'
-    ordering = ['id']
+    ordering = ['order', 'id']
     inlines = [SmallCategoryInline]
 
 

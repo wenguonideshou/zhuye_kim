@@ -7,6 +7,7 @@ class Category(models.Model):
     guonei = models.BooleanField(verbose_name='国内', default=1)
     # auto_now_add是在新增的时候自动添加当前时间，auto_now是在修改的时候自动添加当前时间
     created_time = models.DateTimeField(verbose_name='创建时间', auto_now_add=True)
+    order = models.IntegerField(verbose_name='顺序', default=1, help_text='分类显示顺序')
 
     def __str__(self):
         return self.name
@@ -14,13 +15,14 @@ class Category(models.Model):
     class Meta:
         verbose_name = '大分类'
         verbose_name_plural = verbose_name
-        ordering = ['id']
+        ordering = ['order', 'id']
 
 
 class SmallCategory(models.Model):
     name = models.CharField(verbose_name='小分类', max_length=100)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='大分类')
     created_time = models.DateTimeField(verbose_name='创建时间', auto_now_add=True)
+    order = models.IntegerField(verbose_name='顺序', default=1, help_text='分类显示顺序')
 
     def __str__(self):
         return self.name
@@ -28,7 +30,7 @@ class SmallCategory(models.Model):
     class Meta:
         verbose_name = '小分类'
         verbose_name_plural = verbose_name
-        ordering = ['id']
+        ordering = ['order', 'id']
 
 
 class Site(models.Model):
@@ -39,6 +41,7 @@ class Site(models.Model):
     # ImageField类型必须设置upload_to参数
     image_url = models.ImageField('图片', upload_to='images/Site/%Y/%m/%d', default='images/Site/default.png')
     true_url = models.URLField(verbose_name='地址', max_length=100, blank=True)
+    order = models.IntegerField(verbose_name='顺序', default=1, help_text='站点显示顺序')
     created_time = models.DateTimeField(verbose_name='创建时间', auto_now_add=True)
 
     def __str__(self):
@@ -47,7 +50,7 @@ class Site(models.Model):
     class Meta:
         verbose_name = '站点'
         verbose_name_plural = verbose_name
-        ordering = ['id']
+        ordering = ['order', 'id']
 
 
 class BackGroundCategory(models.Model):
