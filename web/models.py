@@ -37,7 +37,7 @@ class Site(models.Model):
     # verbose_name 外键在编辑文章界面展示的名字，on_delete=models.CASCADE 外键删除时被关联的表内的主键也强制删除
     smallcategory = models.ForeignKey(SmallCategory, on_delete=models.CASCADE, verbose_name='小分类')
     # ImageField类型必须设置upload_to参数
-    image_url = models.ImageField('图片', upload_to='images/Site/%Y/%m/%d')
+    image_url = models.ImageField('图片', upload_to='images/Site/%Y/%m/%d', default='images/Site/default.png')
     true_url = models.URLField(verbose_name='地址', max_length=100, blank=True)
     created_time = models.DateTimeField(verbose_name='创建时间', auto_now_add=True)
 
