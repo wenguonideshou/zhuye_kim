@@ -120,3 +120,8 @@ except Exception as e:
 if DATABASES['default']['ENGINE'] == 'django.db.backends.mysql':
     import pymysql
     pymysql.install_as_MySQLdb()
+
+
+SITE_NAME='KIM主页  -  主页从未如此惊艳'
+SITE_DESC='精雕细琢每一像素、只为让您拥有一个体面的浏览器主页。除此之外，再无其他。'
+SITE_KEYWORD='Google搜索,国外网站,国外网址,国外购物,国外视频,国外新闻,国外设计网站,国外网址导航,网站大全,网址导航,元搜索,多引擎搜索,效率工具,浏览器主页,聚合搜索'
