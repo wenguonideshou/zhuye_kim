@@ -1,4 +1,4 @@
-
+import traceback
 import os
 import sys
 
@@ -113,9 +113,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 try:
     from .local_settings import *
-except SyntaxError as e:
-    print("ERROR:", e)
-    sys.exit(0)
+except Exception as e:
+    traceback.print_exc()
+
 
 if DATABASES['default']['ENGINE'] == 'django.db.backends.mysql':
     import pymysql
