@@ -111,10 +111,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-try:
-    from .local_settings import *
-except Exception as e:
-    traceback.print_exc()
+# try:
+#     from .local_settings import *
+# except Exception as e:
+#     traceback.print_exc()
 
 
 if DATABASES['default']['ENGINE'] == 'django.db.backends.mysql':
