@@ -43,7 +43,7 @@ python3 manage.py runserver 127.0.0.1:8001
 
 ![反向代理.png](https://i.loli.net/2018/07/17/5b4df8524ab67.png)	
 
-后台地址为http://ip/admin，如果已经绑定域名反向代理则为http://域名/admin，管理员用户名admin密码12345678@
+后台地址为http://域名/admin，管理员用户名admin 密码12345678@
 
 
 后台的“大分类”指的是常用/男生/女生 这一行，“小分类”指的是热门/资讯/影音/邮箱的这一列
