@@ -11,6 +11,7 @@
 
 Centos7 + Python3 + MySQL + Django1.8.x-2.0.x
 
+- 安装宝塔面板，并安装mysql（mariadb也可以），新建数据库名为zhuye
 
 - 安装Python3和pip3
 
@@ -22,8 +23,6 @@ Centos7系统安装Python3可以参考文章：http://blog.51cto.com/wenguonides
 yum install git screen -y
 pip3 install -r requirements.txt
 ```
-
-- 安装宝塔面板，并安装mysql（mariadb也可以），新建数据库名为zhuye
 
 - 修改zhuye_kim/settings.py中的DATABASES对应的数据库信息（只需要修改数据库密码）
 
