@@ -23,7 +23,7 @@ yum install git screen -y
 pip3 install -r requirements.txt
 ```
 
-- 使用宝塔面板或其他方式安装mysql（mariadb也可以），新建数据库名为zhuye
+- 使用宝塔面板，并安装mysql（mariadb也可以），新建数据库名为zhuye
 
 - 修改zhuye_kim/settings.py中的DATABASES对应的数据库信息（只需要修改数据库密码）
 
