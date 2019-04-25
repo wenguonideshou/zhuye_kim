@@ -7,6 +7,10 @@
 
 #### 使用说明 ####
 
+- 环境要求
+
+Centos7 + Python3 + MySQL + Django1.8.x-2.0.x
+
 
 - 安装Python3和必备组件、库
 
