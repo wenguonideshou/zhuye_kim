@@ -12,9 +12,11 @@
 Centos7 + Python3 + MySQL + Django1.8.x-2.0.x
 
 
-- 安装Python3和必备组件、库
+- 安装Python3和pip3
 
 Centos7系统安装Python3可以参考文章：http://blog.51cto.com/wenguonideshou/2083301
+
+- 安装程序要求的必备组件、库
 
 ```bash
 yum install git screen -y
