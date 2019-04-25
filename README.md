@@ -50,6 +50,8 @@ python3 manage.py runserver 127.0.0.1:8001
 
 更新记录：
 
+2019-04-25 解决django对mysql严格模式的警告、增加requirements.txt限定django大版本号
+
 2019-01-07 合并yetist提交的PR：支持django1.8+、支持分类排序、增加站点描述、增加站点默认图标、所有变量统一到settings.py中设置
 
 2019-01-06 修复https下百度搜索关键字不联想的bug
