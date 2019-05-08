@@ -21,7 +21,6 @@ Centos7系统安装Python3可以参考文章：http://blog.51cto.com/wenguonides
 
 ```bash
 yum install git screen -y
-pip3 install -r requirements.txt
 ```
 
 - 修改zhuye_kim/settings.py中的DATABASES对应的数据库信息（只需要修改数据库密码）
@@ -31,6 +30,7 @@ pip3 install -r requirements.txt
 ```bash
 git clone https://github.com/wenguonideshou/zhuye_kim
 cd zhuye_kim
+pip3 install -r requirements.txt
 python3 manage.py makemigrations --merge
 python3 manage.py makemigrations
 python3 manage.py migrate
