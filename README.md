@@ -9,40 +9,42 @@
 
 - 环境要求
 
-Centos7 + Python3 + MySQL + Django1.8.x-2.0.x
+    Centos7 + Python3 + MySQL + Django1.8.x-2.0.x
 
-- 安装宝塔面板，并安装mysql（mariadb也可以），新建数据库名为zhuye
+- 安装宝塔面板，并安装mysql（mariadb也可以）和nginx
+
+- 新建数据库名为zhuye，导入zhuye.sql
 
 - 安装Python3和pip3
 
-Centos7系统安装Python3可以参考文章：http://blog.51cto.com/wenguonideshou/2083301
+    Centos7系统安装Python3可以参考文章：http://blog.51cto.com/wenguonideshou/2083301
 
-- 安装程序要求的必备组件、库
+- 安装必备组件，下载源码
 
-```bash
-yum install git screen -y
-```
+    ```bash
+    yum install git screen -y
+    git clone https://github.com/wenguonideshou/zhuye_kim
+    ```
 
 - 修改zhuye_kim/settings.py中的DATABASES对应的数据库信息（只需要修改数据库密码）
 
-- 下载源码、建表
+- 安装必备库，迁移模型(更新表结构)
 
-```bash
-git clone https://github.com/wenguonideshou/zhuye_kim
-cd zhuye_kim
-pip3 install -r requirements.txt
-python3 manage.py makemigrations --merge
-python3 manage.py makemigrations
-python3 manage.py migrate
-```
-
-- 导入zhuye.sql
+    ```
+    cd zhuye_kim
+    pip3 install -r requirements.txt
+    python3 manage.py makemigrations --merge
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    ```
 
 - 运行网站
-```bash
-screen -S zhuye
-python3 manage.py runserver 127.0.0.1:8001
- ```
+
+    ```bash
+    cd zhuye_kim
+    screen -S zhuye
+    python3 manage.py runserver 127.0.0.1:8001
+     ```
  	 
 - Nginx反向代理
 
